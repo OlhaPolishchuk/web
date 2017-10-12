@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+
+  <style>
+  body{
+    background-image: url("fon2.png");
+    background-attachment:fixed;
+    background-size: 1600px;
+    font-family: Georgia, serif;
+    bgcolor: #F8F8FF
+  }
+
+  p{
+    font-size: large;
+    margin: 1.5em 0;
+  }
+
+  #menu {
+    height: auto;
+    width: auto;
+}
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#menu ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+#menu ul li {
+
+    position: relative;
+    left: 18%;
+float: left;
+height: 30px;
+padding: 0;
+margin: 0;
+}
+#menu ul li a {
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #000;
+    background-color: Gainsboro;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#menu ul li a:hover {
+    background-color: Silver;
+}
+#menu ul li ul {
+    position: absolute;
+    left: -20px;
+
+
+    -webkit-transition: height 1s linear 0s;
+    -moz-transition: height 1s linear 0s;
+    -ms-transition: height 1s linear 0s;
+    -o-transition: height 1s linear 0s;
+    transition: height 1s linear 0s;
+    height: 0px;
+    overflow:hidden;
+}
+#menu ul li:hover ul {
+    height: 100px;
+    -webkit-transition: height 1s linear 0s;
+    -moz-transition: height 1s linear 0s;
+    -ms-transition: height 1s linear 0s;
+    -o-transition: height 1s linear 0s;
+    transition: height 1s linear 0s;
+}
+
+footer{
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+
+.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+  </style>
+</head>
+<body>
+  <div style="max-width: 960px;margin: 0 auto;">
+
+    <div style="text-align: center">
+      <div class ="animate-pop-in"; style="text-align: center">
+      <header>
+      <h1 style="font-family: 'Georgia', margin: 1em auto;
+      font-size: 2.75em">Правові аспекти господарських договорів між
+      підприємствами <br> ЄС та не-ЄС</h1>
+      </header>
+    </div>
+    </div>
+
+  <hr size="2" color="#000000" />
+
+<div id="menu">
+  <ul>
+    <li><a href="index.html"><b>Головна</b></a></li>
+    <li><a href="#"><b>Новини</b></a></li>
+    <li><a href="#"><b>Студентам</b></a>
+      <ul class="submenu">
+           <li><a href="linkc1.html">Програма</a></li>
+           <li><a href="linkc2.html">Лабораторні</a></li>
+           <li><a href="linkc3.html">Література</a></li>
+          </ul>
+    </li>
+    <li><a href="#"><b>Відгуки</b></a></li>
+    <li><a href="#"><b>Контакти</b></a></li>
+    <li><a href="#"><b>Admin</b></a></li>
+  </ul>
+</div>
+  <hr size="1" color="#696969" />
+  <h2 style="text-align: center; font-family: 'Georgia', margin: 1em auto;
+  font-size: 1.75em">
+ <b>Контакти</b>
+  </h2>
+  <hr size="1" color="#696969" />
+
+<p style="float:right;margin:0 0 1.75em 1.75em"><iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.351118650152!2d24.0124999157093!3d49.835859779395356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7a31f0dccd%3A0x9869cc7025bc8e3f!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIgItCb0YzQstGW0LLRgdGM0LrQsCDQv9C-0LvRltGC0LXRhdC90ZbQutCwIg!5e0!3m2!1suk!2sru!4v1507741147299"
+width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p><br><br><br>
+
+<p>
+  <b>Адреса:</b>
+  вул. Степана Бандери, 12, <br>Львів, Львівська область, Україна, 79000
+</p>
+<p>
+  <b>Номер(и) телефону:</b><br>
+  (032) 258-30-92<br>
+  (032) 258-30-29<br>
+  (032) 258-21-16
+</p>
+<p>
+  <b>E-mail:</b>
+  inpp.dept@lpnu.ua
+</p><br><br><br><br><br>
+
+<hr size="1" color="#696969" />
+
+<footer>
+  Copyright Olga Polishchuk 2017
+</footer>
+</body>
+</html>

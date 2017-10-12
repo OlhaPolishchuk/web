@@ -9,89 +9,101 @@
   <style>
 
   body{
-    background: url("C:/Users/8460p/Desktop/Web/Lab_3/fon2.png");
+    background-image: url("fon2.png");
     background-attachment:fixed;
     background-size: 1600px;
     font-family: Georgia, serif;
     bgcolor: #F8F8FF
   }
 
-  #navbar {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  #menu {
+    height: auto;
+    width: auto;
+}
+#menu ul {
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
-    text-decoration: none;
-    word-spacing: 25px;
-  }
-
-  #navbar ul{
-    position: absolute;
-  }
-
-  #navbar li { display: inline; }
-  a {text-decoration: none;
-  color: black
 }
 
-li ul {
-    margin-left: -10px;
-    margin-top: -2em;
-}
-ul {
-    list-style: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-ul:after {
+#menu ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
-ul.menu > li {
-    float: left;
+
+#menu ul li {
+
     position: relative;
-    left: 210px;
+    left: 18%;
+float: left;
+height: 30px;
+padding: 0;
+margin: 0;
 }
-ul.menu > li > a {
-    display: block;
-    padding: 10px;
-    color: black;
+#menu ul li a {
+    line-height: 30px;
     text-decoration: none;
-}
-ul.menu > li > a:hover {
-    background-color: Gainsboro;
-}
-ul.submenu {
-    display: none;
-    position: relative;
-    width: 110px;
-    top: 70px;
-    left: 10px;
-    background-color: Gainsboro;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 30px;
     border: none;
-}
-ul.submenu > li {
-    display: block;
-}
-ul.submenu > li > a {
-    display: block;
-    padding: 10px;
-    color: black;
+    color: #000;
     background-color: Gainsboro;
-    text-decoration: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#menu ul li a:hover {
+    background-color: Silver;
+}
+#menu ul li ul {
+    position: absolute;
+    left: -20px;
 
+
+    -webkit-transition: height 1s linear 0s;
+    -moz-transition: height 1s linear 0s;
+    -ms-transition: height 1s linear 0s;
+    -o-transition: height 1s linear 0s;
+    transition: height 1s linear 0s;
+    height: 0px;
+    overflow:hidden;
 }
-ul.submenu > li > a:hover {
-    text-decoration: underline;
-    background: DarkGrey;
+#menu ul li:hover ul {
+    height: 100px;
+    -webkit-transition: height 1s linear 0s;
+    -moz-transition: height 1s linear 0s;
+    -ms-transition: height 1s linear 0s;
+    -o-transition: height 1s linear 0s;
+    transition: height 1s linear 0s;
 }
 
-li:hover ul {
-    display: block;
+footer{
+  text-align: center;
+  margin: 1.5em 0;
 }
+
+
+.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
   </style>
 </head>
@@ -99,7 +111,7 @@ li:hover ul {
 <body>
 <div style="max-width: 960px;margin: 0 auto;">
 
-  <div style="text-align: center">
+  <div class ="animate-pop-in"; style="text-align: center">
     <header>
     <h1 style="font-family: 'Georgia', margin: 1em auto;
     font-size: 2.75em">Правові аспекти господарських договорів між
@@ -109,20 +121,22 @@ li:hover ul {
 
 <hr size="2" color="#000000" />
 
-<ul id="navbar" class="menu">
+<div id="menu">
+<ul>
   <li><a href="#"><b>Головна</b></a></li>
   <li><a href="#"><b>Новини</b></a></li>
   <li><a href="#"><b>Студентам</b></a>
-    <ul class="submenu">
+    <ul class="active">
          <li><a href="linkc1.html">Програма</a></li>
          <li><a href="linkc2.html">Лабораторні</a></li>
          <li><a href="linkc3.html">Література</a></li>
         </ul>
   </li>
   <li><a href="#"><b>Відгуки</b></a></li>
-  <li><a href="#"><b>Контакти</b></a></li>
+  <li><a href="contact.html"><b>Контакти</b></a></li>
   <li><a href="#"><b>Admin</b></a></li>
 </ul>
+</div>
 
 <hr size="1" color="#696969" />
  <p style="font-size: large;margin: 1.5em 0;">
@@ -188,7 +202,7 @@ li:hover ul {
 
 <hr size="1" color="#696969" />
 
-<footer style="text-align: center; margin: 1.5em 0;">
+<footer>
   Copyright Olga Polishchuk 2017
 </footer>
 
