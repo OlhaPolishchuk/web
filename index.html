@@ -5,141 +5,44 @@
 <head>
   <meta charset="utf-8">
   <title>Головна сторінка</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-
-  body{
-    background-image: url("fon2.png");
-    background-attachment:fixed;
-    background-size: 1600px;
-    font-family: Georgia, serif;
-    bgcolor: #F8F8FF
-  }
-
-  #menu {
-    height: auto;
-    width: auto;
-}
-#menu ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-
-#menu ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
-}
-
-#menu ul li {
-
-    position: relative;
-    left: 18%;
-float: left;
-height: 30px;
-padding: 0;
-margin: 0;
-}
-#menu ul li a {
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: #000;
-    background-color: Gainsboro;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-#menu ul li a:hover {
-    background-color: Silver;
-}
-#menu ul li ul {
-    position: absolute;
-    left: -20px;
-
-
-    -webkit-transition: height 1s linear 0s;
-    -moz-transition: height 1s linear 0s;
-    -ms-transition: height 1s linear 0s;
-    -o-transition: height 1s linear 0s;
-    transition: height 1s linear 0s;
-    height: 0px;
-    overflow:hidden;
-}
-#menu ul li:hover ul {
-    height: 100px;
-    -webkit-transition: height 1s linear 0s;
-    -moz-transition: height 1s linear 0s;
-    -ms-transition: height 1s linear 0s;
-    -o-transition: height 1s linear 0s;
-    transition: height 1s linear 0s;
-}
-
-footer{
-  text-align: center;
-  margin: 1.5em 0;
-}
-
-
-.animate-pop-in {
-  animation: pop-in .6s ease-out forwards;
-}
-
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-4rem) scale(.8);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-
-  </style>
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<div style="max-width: 960px;margin: 0 auto;">
-
-  <div class ="animate-pop-in"; style="text-align: center">
-    <header>
-    <h1 style="font-family: 'Georgia', margin: 1em auto;
-    font-size: 2.75em">Правові аспекти господарських договорів між
-    підприємствами <br> ЄС та не-ЄС</h1>
-    </header>
+<br><br>
+<div class = "background">
+  <div>
+<nav>
+  <ul class="nav">
+    <li><a href="index.html"><b>Головна</b></a></li>
+    <li><a href="#"><b>Новини</b></a></li>
+    <li class="dropdown">
+      <a class="dropbtn" href="#"><b>Студентам</b></a>
+      <div class="dropdown-content">
+					<a href="#">Програма</a> <a href="#labs">Лабораторні</a> <a href="#literature">Література</a>
+				</div>
+    </li>
+    <li><a href="#"><b>Відгуки</b></a></li>
+    <li><a href="contact.html"><b>Контакти</b></a></li>
+    <li><a href="#"><b>Admin</b></a></li>
+  </ul>
+</nav>
   </div>
 
-<hr size="2" color="#000000" />
 
-<div id="menu">
-<ul>
-  <li><a href="#"><b>Головна</b></a></li>
-  <li><a href="#"><b>Новини</b></a></li>
-  <li><a href="#"><b>Студентам</b></a>
-    <ul class="active">
-         <li><a href="linkc1.html">Програма</a></li>
-         <li><a href="linkc2.html">Лабораторні</a></li>
-         <li><a href="linkc3.html">Література</a></li>
-        </ul>
-  </li>
-  <li><a href="#"><b>Відгуки</b></a></li>
-  <li><a href="contact.html"><b>Контакти</b></a></li>
-  <li><a href="#"><b>Admin</b></a></li>
-</ul>
+<header>
+  <div class = animate-pop-in style="max-width: 70%;margin: 0 auto;">
+    <br><br><br><br><br><br><br><br>
+    <h1 style="font-family: 'Georgia', margin: 1em auto;
+    font-size: 2.75em">Правові аспекти господарських договорів <br>між
+    підприємствами ЄС та не-ЄС</h1>
+    <br><br><br><br><br>
+
+</header>
 </div>
+<br>
 
-<hr size="1" color="#696969" />
- <p style="font-size: large;margin: 1.5em 0;">
+<div style="max-width: 70%; margin: 0 auto;">
+ <p style="border-left: 2px solid #9793c6; padding-left: 10px; font-size: 16pt;">
 <b>Мета курсу:</b> опанування теоретичних та практичних проблем правовідносин,
 що виникають у зв’язку із укладенням, зміною та припиненням господарських
 договорів між підприємствами ЄС та не ЄС, а також вивчення теоретичних положень
@@ -147,9 +50,9 @@ footer{
 законодавства у цій сфері.
  </p>
 
- <hr size="1" color="#696969" />
+<br>
 
- <p style="font-size: large;margin: 1.5em 0;">
+ <p style="border-left: 2px solid #9793c6; padding-left: 10px; font-size: 16pt;">
 <b>Предмет:</b> норми права, які регулюють суспільні відносини, що виникають в
 процесі укладення та виконання господарських договорів між підприємствами ЄС та
 не ЄС, а також теоретичні засади формування законодавчої бази, що регулює
@@ -157,9 +60,9 @@ footer{
 прогалини законодавства, судова практика та досвід окремих країн ЄС та не ЄС.
  </p>
 
- <hr size="1" color="#696969" />
+<br>
 
- <p style="font-size: large;margin: 1.5em 0;">
+ <p style="border-left: 2px solid #9793c6; padding-left: 10px; font-size: 16pt;">
 <b>Зміст:</b> Загальні положення про господарський договір між підприємствами
 ЄС та не ЄС. Форма та порядок укладення договорів між підприємствами ЄС та не
 ЄС. Виконання договорів між підприємствами ЄС та не ЄС. Правові наслідки
@@ -168,43 +71,42 @@ footer{
 Договори у сфері інтелектуальної власності. Комерційна концесія. Договори про
 спільну діяльність. Товариства.
  </p>
+ <br>
+</div>
 
- <hr size="2" color="#000000" />
-
+<div class = "background">
  <h2 style="text-align: center; font-family: 'Georgia', margin: 1em auto;
- font-size: 1.75em">
+ font-size: 25pt">
 <b>Останні новини</b>
  </h2>
+ </div>
 
-<hr size="1" color="#696969" />
-
-<p style="font-size: large;margin: 1.5em 0;">
+<div style="max-width: 70%; margin: 0 auto;">
+<p style="border-left: 2px solid #9793c6; padding-left: 10px; font-size: 16pt;">
 <b>Місце у навчальному процесі</b> – обов’язкова, 2 семестр.
 </p>
-
-<p style="font-size: large;margin: 1.5em 0;">
+<br>
+<p style="border-left: 2px solid #9793c6; padding-left: 10px; font-size: 16pt;">
 У результаті вивчення дисципліни <b>«Правові аспекти господарських договорів між
 підприємствами ЄС та не-ЄС»</b> здобувач вищої освіти повинен:
-</p>
-
-<ul style="list-style-type:none; font-size: large;margin: 1.5em 0;">
-  <li><b>знати:</b>  правову природу, поняття та види господарських договорів,
+<br><br>
+  <b>знати:</b>  правову природу, поняття та види господарських договорів,
     які укладаються між підприємствами ЄС та не ЄС; загальний порядок укладення
     таких договорів; вимоги щодо форми та змісту господарських договорів;
     особливості зміни та припинення договорів; порядок укладення та виконання
-    окремих видів договорів; правові наслідки невиконання договорів;</li>
-<br>
-  <li><b>вміти:</b> правильно застосовувати законодавство, що регулює порядок
+    окремих видів договорів; правові наслідки невиконання договорів;
+<br><br>
+    <b>вміти:</b> правильно застосовувати законодавство, що регулює порядок
     укладення та виконання господарських договорів між підприємствами ЄС та не
     ЄС; складати проекти різних типів договорів; аналізувати практичні
-    казуси.</li>
-</ul>
-
-<hr size="1" color="#696969" />
-
+    казуси.
+</p>
+</div>
 <footer>
-  Copyright Olga Polishchuk 2017
+  <br>
+  <b>Copyright Olga Polishchuk 2017</b>
+  <br><br>
 </footer>
-
+</div>
 </body>
 </html>
