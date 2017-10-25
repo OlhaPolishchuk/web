@@ -3,6 +3,8 @@ body{
 			margin:0;
 			padding:0;
 }
+
+
 .background{
 	background-image: url("backgrnd.jpeg");
 	background-color: rgba(0,0,0,0.5);
@@ -10,6 +12,43 @@ body{
 	background-attachment:fixed;
 	background-size: cover;
 	flex: 1;
+	color: #000000;
+}
+.backgroundcourse{
+	background-image: url("backgrndcourse.jpg");
+	background-color: rgba(0,0,0,0.5);
+	background-position: center center;
+	background-attachment:fixed;
+	background-size: cover;
+	flex: 1;
+  color: #000000;
+}
+.backgroundcontact{
+	background-image: url("backgrndcontact.jpg");
+	background-color: rgba(0,0,0,0.5);
+	background-position: center center;
+	background-attachment:fixed;
+	background-size: cover;
+	flex: 1;
+  color: #000000;
+}
+.backgroundnews{
+	background-image: url("backgrndnews.jpg");
+	background-color: rgba(0,0,0,0.5);
+	background-position: center center;
+	background-attachment:fixed;
+	background-size: cover;
+	flex: 1;
+  color: #000000;
+}
+.backgroundfb{
+	background-image: url("backgrndfb.jpg");
+	background-color: rgba(0,0,0,0.5);
+	background-position: center center;
+	background-attachment:fixed;
+	background-size: cover;
+	flex: 1;
+  color: #000000;
 }
 p{
 	font-size: large;
@@ -20,7 +59,7 @@ footer {
 	            right: 0;
 	            bottom: 0;
 	            left: 0;
-	            background-color: #d1ceed;
+	            background-color: #f2efef;
 	            text-align: center;
 	       }
 
@@ -71,4 +110,175 @@ footer {
 					}
 				}
 
+}
+
+#contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #6d6d6d;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #dbdbdb;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#ffffff;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#DBDBDB;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#727272;
+    background:#e0e0e0;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#6d6d6d;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+
+.testimonial blockquote {
+	margin: 10px 10px 0;
+	background: #f8f8f8;
+	padding: 20px 60px;
+	position: relative;
+	border: none;
+	border-radius: 8px;
+	font-style: italic;
+}
+
+.testimonial blockquote:before, .testimonial blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 80px;
+	line-height: 1;
+	color: #fff;
+	font-style: normal;
+}
+
+.testimonial blockquote:before {
+	top: 0;
+	left: 10px;
+}
+
+.testimonial blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -.5em;
+}
+
+.testimonial div {
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #f8f8f8;
+	margin: 0 0 0 60px;
+}
+
+.testimonial p {
+	margin: 8px 0 0 20px;
+	text-align: left;
 }
