@@ -1,12 +1,12 @@
-AddType text/cache-manifest .manifest
-<Files offline.manifest>
- ExpiresActive On
- ExpiresDefault "access"
-</Files>
 CACHE MANIFEST
-#версия 1
+#версія 1
 CACHE:
 index.html
+admin.html
+contact.html
+course.html
+feedback.html
+news.html
 style.css
 backgrnd.jpeg
 backgrndcontact.jpg
@@ -20,4 +20,4 @@ noimg.jpg
 NETWORK:
 *
 FALLBACK:
-/ /offline.html
+error.html
