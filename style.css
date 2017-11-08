@@ -282,3 +282,15 @@ input {
 	margin: 8px 0 0 20px;
 	text-align: left;
 }
+
+.review-author {
+		font-weight: bold;
+    font-size: large;
+}
+
+.review-date{
+
+    color: #979797;
+    font-style: italic;
+    font-size: 90%;
+}

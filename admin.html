@@ -56,23 +56,32 @@
 </div>
 <br><br>
 <content>
-  <div class="container admin">
-    <div class="row">
-      <div class="col-lg-6 col-offset-2 btn-add">
-        <img class="images" src="noimg.jpg" alt="error" height="350" width = "100%" />
-        <br><br>
-      </div>
-      <div class="col-lg-6">
-        <input type="text" class="form" placeholder="Заголовок">
-        <textarea name="message" id="message" class="form textarea"
-        placeholder="Текст"></textarea>
-          <button>Відправити</button>
+  <div class="container">
+  	<div class="main-text">
 
-          <button style="margin: 3.5%">Додати зображення</button>
+  		<div class="col-md-6">
+  				<form id="news-img-form">
+  					<label>Виберіть зображення</label>
+  					<input id="news-img" type="file" class="form-control-file" accept="image/*">
+  				</form>
+  			<br>
+  			<img id="target" src="noimg.jpg" width="100%" class="card" style="max-height: 350px; max-width: 350px; padding: 10px"/>
+  		</div>
 
-      </div>
+
+  		<div class="col-md-6">
+  			<form id="news-form">
+  				<input id="news-name" type="text" class="form-control" placeholder="Заголовок">
+  				<br>
+  				<textarea id="news-text" class="form-control" rows="15" placeholder="Новина"></textarea>
+  				<br>
+  				<input type="button" value="Надіслати" class="btn btn-primary" onclick="addNews()">
+  			</form>
+  		</div>
+
+  	</div>
   </div>
-</div>
+
 </content>
 
 <br><br><br><br><br><br><br><br><br><br>
@@ -81,5 +90,12 @@
   <b>Copyright Olga Polishchuk 2017</b>
   <br><br>
 </footer>
+
+<script src="admin.js"></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/scroolreveal.js'></script>
+<script src='js/bootstrap.min.js'></script>
+<script src='js/magnific-popup.js'></script>
+
 </body>
 </html>

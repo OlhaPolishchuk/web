@@ -63,98 +63,51 @@
 <br>
 
 <div style="max-width: 70%;margin: 0 auto;">
-<div class="testimonial">
-<blockquote>
+
+  <div id="reviews-list">
+    <div class="container card">
+      <div class="testimonial">
+        <span class="review-author">Name</span>
+        <span class="review-date">01.01.2018, 00:00</span>
+        <p>
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit
 libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
 Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel
 scelerisque nisl consectetur et.
-</blockquote>
-<div></div>
-<p>
-Name, Location
-</p>
-</div>
+        </p><br>
+      </div>
+    </div>
+  </div><br>
 
-<div class="testimonial">
-<blockquote>
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit
-libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
-Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel
-scelerisque nisl consectetur et.
-</blockquote>
-<div></div>
-<p>
-Name, Location
-</p>
-</div>
+  <form class="container card" id="form">
+    <h2>&nbsp Залишити відгук</h2><br>
+    <div class="form-group">
+      <div class="inner contact">
+        <div class="col-xs-12">
+          <input type="text" name="name" id="name" required="required" class="form" placeholder="Ім'я">
+        </div><br><br>
+        <div class="col-xs-12">
+          <textarea name="text" id="text" class="form textarea"  placeholder="Текст повідомлення"></textarea><br>
+          <input type="button" value="Надіслати" class="btn btn-default"
+          onclick="addReview()">
+        </div>
+      </div>
+    </div>
+  </form>
+</div><br>
 
-<div class="testimonial">
-<blockquote>
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit
-libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
-Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel
-scelerisque nisl consectetur et.
-</blockquote>
-<div></div>
-<p>
-Name, Location
-</p>
-</div>
-
-<br><br>
-<h2>&nbsp Залишити відгук</h2>
-<br>
-<div class="inner contact">
-                <!-- Form Area -->
-                <div class="contact-form">
-                    <!-- Form -->
-                    <form id="contact-us" method="post" action="#">
-                        <!-- Left Inputs -->
-                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
-                            <!-- Name -->
-                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Ім'я" />
-                            <!-- Email -->
-                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
-                            <!-- Subject -->
-                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Заголовок" />
-                        </div><!-- End Left Inputs -->
-                        <!-- Right Inputs -->
-                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
-                            <!-- Message -->
-                            <textarea name="message" id="message" class="form textarea"  placeholder="Текст повідомлення"></textarea>
-                        </div><!-- End Right Inputs -->
-                        <!-- Bottom Submit -->
-                        <div class="relative fullwidth col-xs-12">
-                            <!-- Send Button -->
-                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Надіслати</button>
-                        </div><!-- End Bottom Submit -->
-                        <!-- Clear -->
-                        <div class="clear"></div>
-                    </form>
-
-                    <!-- Your Mail Message -->
-                    <div class="mail-message-area">
-                        <!-- Message -->
-                        <div class="alert gray-bg mail-message not-visible-message">
-                            Дякуємо за Ваш відгук!
-                        </div>
-                    </div>
-
-                </div><!-- End Contact Form Area -->
-            </div><!-- End Inner -->
-
-</div>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
   <br>
   <b>Copyright Olga Polishchuk 2017</b>
   <br><br>
 </footer>
+
+<script src="feedback.js"></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/scroolreveal.js'></script>
+<script src='js/bootstrap.min.js'></script>
+<script src='js/magnific-popup.js'></script>
+
 </body>
 </html>
