@@ -62,20 +62,22 @@
   		<div class="col-md-6">
   				<form id="news-img-form">
   					<label>Виберіть зображення</label>
-  					<input id="news-img" type="file" class="form-control-file" accept="image/*">
+  					<input id="news-img" type="file" class="form-control-file"
+            accept="image/*" onclick="showImage">
   				</form>
   			<br>
-  			<img id="target" src="noimg.jpg" width="100%" class="card" style="max-height: 350px; max-width: 350px; padding: 10px"/>
+  			<img id="target" src="noimg.jpg" width="100%" class="card"
+        style="max-height: 350px; max-width: 350px; padding: 10px"/>
   		</div>
 
 
   		<div class="col-md-6">
   			<form id="news-form">
-  				<input id="news-name" type="text" class="form-control" placeholder="Заголовок">
+  				<input id="news-name" type="text" class="form" placeholder="Заголовок">
   				<br>
-  				<textarea id="news-text" class="form-control" rows="15" placeholder="Новина"></textarea>
+  				<textarea id="news-text" class="form" rows="15" placeholder="Новина"></textarea>
   				<br>
-  				<input type="button" value="Надіслати" class="btn btn-primary" onclick="addNews()">
+  				<input type="button" value="Надіслати" class="btn btn-default" onclick="addNews()">
   			</form>
   		</div>
 

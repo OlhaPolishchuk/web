@@ -8,7 +8,6 @@ function addReview() {
         var text = document.getElementById('text').value;
         var parentElem = document.getElementById('reviews-list');
         var out = document.createElement('div');
-        out.id = 'reviews';
         out.innerHTML =
             "<div class='container card'><br>" +
             "   <span class='review-author'>" + author + "</span>" +

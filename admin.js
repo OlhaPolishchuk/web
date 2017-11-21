@@ -1,5 +1,3 @@
-var i = 0;
-
 function addNews() {
     if ($('#news-name').val() === "" || $('#news-text').val() === "" || $('#news-img').val() === "") {
         alert('Заповніть всі поля');
@@ -8,14 +6,6 @@ function addNews() {
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
         alert('Новина успішно надіслана.');
-        /*
-        var name = document.getElementById('news-name').value;
-        var text = document.getElementById('news-text').value;
-        var img = document.getElementById('news-img').value;
-        i++;
-        var list = [];
-        list.push({"name": (name), "text": (text), "img": (img)});
-        localStorage.setItem(i, list);*/
     }
 }
 
