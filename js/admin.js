@@ -1,8 +1,16 @@
+var i = 0;
+
+function isOnline() {
+   return window.navigator.onLine;
+}
+
+
 function addNews() {
     if ($('#news-name').val() === "" || $('#news-text').val() === "" || $('#news-img').val() === "") {
         alert('Заповніть всі поля');
         return false;
-    } else {
+      }
+    if (isOnline()){
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
         alert('Новина успішно надіслана.');
