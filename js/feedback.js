@@ -52,7 +52,6 @@ function addReview() {
                  time: new Date
              };
              store.add(review);
-             console.log("sosoososos")
          }
         document.getElementById('form').reset();
     }
@@ -75,8 +74,8 @@ function readOfflineReview() {
             localStorage.removeItem(k);
         }
     } else {
-        var transaction = db.transaction(["reviews"], "readonly");
-        var store = transaction.objectStore("reviews");
+        var transaction = db.transaction(["feedback"], "readonly");
+        var store = transaction.objectStore("feedback");
 
         store.openCursor().onsuccess = function (e) {
             var cursor = e.target.result;
