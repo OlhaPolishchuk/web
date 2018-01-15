@@ -11,20 +11,21 @@ function addNews() {
         return false;
       }
     if (isOnline()) {
-      var data = {
-             longdescription: $('#news-name').val(),
-             shortdescription: $('#news-text').val()
-         }
-         $.ajax({
-             url: 'http://localhost:8080/api/bears',
-             type: "post",
-             dataType: "json",
-             data: data
-         });
+        var data = {
+            name: document.getElementById('news-name').value,
+            text: document.getElementById('news-text').value
+        };
+        $.ajax({
+            url: 'http://localhost:8080/api/bears',
+            type: "post",
+            dataType: "json",
+            data: data
+        });
         document.getElementById('news-form').reset();
         alert('Новина успішно надіслана.');
       } else {
          if (useLocalStorage) {
+
              var name = document.getElementById('news-name').value;
              var text = document.getElementById('news-text').value;
              imgData = target.src;
