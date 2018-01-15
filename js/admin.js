@@ -11,6 +11,16 @@ function addNews() {
         return false;
       }
     if (isOnline()) {
+      var data = {
+             longdescription: $('#news-name').val(),
+             shortdescription: $('#news-text').val()
+         }
+         $.ajax({
+             url: 'http://localhost:8080/api/bears',
+             type: "post",
+             dataType: "json",
+             data: data
+         });
         document.getElementById('news-form').reset();
         alert('Новина успішно надіслана.');
       } else {
