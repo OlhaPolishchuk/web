@@ -6,7 +6,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var morgan = require('morgan');
-var cors = require('cors')
+var cors = require('cors');
 
 // configure app
 app.use(cors());
@@ -20,7 +20,19 @@ var port = process.env.PORT || 8080; // set our port
 
 // DATABASE SETUP
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://root:12345@ds129706.mlab.com:29706/web_lab_nulp'); // connect to our database
+mongoose.connect('|mongodb://OlgaPol:nulp4ever@ds161316.mlab.com:61316/webnulp|'); // connect to our database
+
+/*
+*     ЗАРЕЄСТРУЙСЯ НА САЙТІ
+*                 https://mlab.com/
+*     СТВОРИ БАЗУ ДАНИХ
+*                 (MongoDB Deployments /+ CREATE NEW/)
+*     ПОТІМ В ТІЙ БАЗІ ДАНИХ СТВОРИ КОРИСТУВАЧА
+*     І ВСТАВ ПОСИЛАННЯ НА БД В РЯДОЧОК ПЕРЕД ЦИМ КОМЕНТОМ
+*     ВОНО ТАМ БУДЕ ЗВЕРХУ В ФОРМАТІ
+*                  mongodb://<dbuser>:<dbpassword>@ds129706.mlab.com:29706/web_lab_nulp
+*     ТУДИ ТРЕБА ВПИСАТИ ЛОГІН І ПАРОЛЬ КОРИСТУВАЧА БД, ЯКОГО ТИ СТВОРИЛА
+*     */
 
 // Handle the connection event
 var db = mongoose.connection;
@@ -59,14 +71,13 @@ router.route('/bears')
     .post(function(req, res) {
 
         var bear = new Bear(); // create a new instance of the Bear model
-        bear.title = req.body.title;
-        bear.longdescription = req.body.longdescription; // set the bears name (comes from the request)
-        bear.shortdescription = req.body.shortdescription;
+        bear.name = req.body.name; // set the bears name (comes from the request)
+        bear.text = req.body.text;
         bear.save(function(err) {
             if (err)
                 res.send(err);
 
-            res.json({ message: 'Review created!' });
+            res.json({ message: 'news created!' });
         });
 
 
@@ -77,7 +88,6 @@ router.route('/bears')
         Bear.find(function(err, bears) {
             if (err)
                 res.send(err);
-
             res.json(bears);
         });
     });
@@ -101,10 +111,8 @@ router.route('/bears/:bear_id')
 
             if (err)
                 res.send(err);
-
-            bear.title = req.body.title;
-            bear.longdescription = req.body.longdescription;
-            bear.shortdescription = req.body.shortdescription
+            bear.name = req.body.name;
+            bear.text = req.body.text;
             bear.save(function(err) {
                 if (err)
                     res.send(err);
