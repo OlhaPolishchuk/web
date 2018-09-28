@@ -6,7 +6,7 @@ body{
 
 
 .background{
-	background-image: url("backgrnd.jpeg");
+	background-image: url("https://labworkcloud.blob.core.windows.net/files/backgrnd.jpeg");
 	background-color: rgba(0,0,0,0.5);
 	background-position: center center;
 	background-attachment:fixed;
@@ -15,7 +15,7 @@ body{
 	color: #000000;
 }
 .backgroundcourse{
-	background-image: url("backgrndcourse.jpg");
+	background-image: url("https://labworkcloud.blob.core.windows.net/files/backgrndcourse.jpg");
 	background-color: rgba(0,0,0,0.5);
 	background-position: center center;
 	background-attachment:fixed;
@@ -24,7 +24,7 @@ body{
   color: #000000;
 }
 .backgroundcontact{
-	background-image: url("backgrndcontact.jpg");
+	background-image: url("https://labworkcloud.blob.core.windows.net/files/backgrndcontact.jpg");
 	background-color: rgba(0,0,0,0.5);
 	background-position: center center;
 	background-attachment:fixed;
@@ -33,7 +33,7 @@ body{
   color: #000000;
 }
 .backgroundnews{
-	background-image: url("backgrndnews.jpg");
+	background-image: url("https://labworkcloud.blob.core.windows.net/files/backgrndnews.jpg");
 	background-color: rgba(0,0,0,0.5);
 	background-position: center center;
 	background-attachment:fixed;
@@ -42,7 +42,7 @@ body{
   color: #000000;
 }
 .backgroundfb{
-	background-image: url("backgrndfb.jpg");
+	background-image: url("https://labworkcloud.blob.core.windows.net/files/backgrndfb.jpg");
 	background-color: rgba(0,0,0,0.5);
 	background-position: center center;
 	background-attachment:fixed;
